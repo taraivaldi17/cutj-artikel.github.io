@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>CU Tilung Jaya</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container-lg">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="/cutj-artikel/#home">
+                <img src="img/cu-icon.png" width="35" height="35" class="d-inline-block" alt="Logo Company">
+                <span class="small ms-2 d-none d-lg-inline text-secondary">CU Tilung Jaya</span>
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLeft"
+                aria-controls="navbarLeft" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Left links -->
+            <div class="collapse navbar-collapse" id="navbarLeft">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cutj-artikel/#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" dropdown-toggle="dropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Profile</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item text-secondary" href="/cutj-artikel/#about">Tentang Kami</a>
+                            <a class="dropdown-item text-secondary" href="/cutj-artikel/#visimisi">Visi & Misi Kami</a>
+                            <a class="dropdown-item text-secondary" href="/cutj-artikel/struktur.html">Struktur</a>
+                            <a class="dropdown-item text-secondary" href="/cutj-artikel/#contact">Hubungi Kami</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cutj-artikel/products-services.html">Produk & Pelayanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cutj-artikel/menjadi-anggota.html">Menjadi Anggota</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" dropdown-toggle="dropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">CU News</a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a href="/cutj-artikel/news.html" class="dropdown-item text-secondary">Berita & Kisah
+                                Sukses</a>
+                            <a href="/cutj-artikel/agenda.html" class="dropdown-item text-secondary">Agenda</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cutj-artikel/kalkulator.html">Kalkulator</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Anggota Start -->
+    <section class="anggota py-5" id="anggota">
+        <div class="container-lg py-4">
+
+            <!-- Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center text-uppercase">
+                        <h2 class="fw-bold mb-5">Permohonan Menjadi Anggota</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- End Title -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button class="btn btn-danger me-md-2 px-3 mb-3" type="button"><i
+                                class="fas fa-download me-2"></i>Syarat Menjadi Anggota.DOC
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4 class="text-center text-muted mb-2">Biodata Anggota</h4>
+
+                <div class="col-md-12">
+                    <div class="contact-form">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label for="nama" class="col-form-label">Nama Lengkap :</label>
+                                    <input type="text" name="nama" id="nama"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label for="panggilan" class="col-form-label">Nama Panggilan :</label>
+                                    <input type="text" name="panggilan" id="panggilan"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <label for="tempat_lahir" class="col-form-label">Tempat Lahir :</label>
+                                    <input type="text" name="tempat_lahir" id="tempat_lahir"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+
+                                <div class="col-lg-6 mb-4">
+                                    <label for="tgl_lahir" class="col-form-label">Tanggal Lahir :</label>
+                                    <input type="date" name="tgl_lahir" id="tgl_lahir"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label for="nik" class="col-form-label">Nomor NIK :</label>
+                                    <input type="number" name="nik" id="nik"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="jenis_kelamin" class="col-form-label">Jenis Kelamin :</label>
+
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="jenis_kelamin"
+                                            id="laki-laki">
+                                        <label class="form-check-label" for="laki-laki">
+                                            Laki-Laki
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="jenis_kelamin"
+                                            id="perempuan">
+                                        <label class="form-check-label" for="perempuan">
+                                            Perempuan
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label for="ibu_kandung" class="col-form-label">Nama Ibu Kandung :</label>
+                                    <input type="text" name="ibu_kandung" id="ibu_kandung"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label for="suku" class="col-form-label">Suku / Etnis :</label>
+                                    <input type="text" name="suku" id="suku"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-form-label">Alamat Tempat Tinggal :</label>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        placeholder="Jalan">
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <input type="number" class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        placeholder="No">
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        placeholder="RT / RW">
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        placeholder="Desa / Kecamatan">
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        placeholder="Kabupaten">
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <input type="text" class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                                        placeholder="Provinsi">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <label for="hp" class="col-form-label">Nomor Handphone :</label>
+                                    <input type="number" name="hp" id="hp"
+                                        class="form-control form-control-lg fs-6 border-0 shadow-sm">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="pernikahan" class="col-form-label">Status Pernikahan :</label>
+
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pernikahan" id="menikah">
+                                        <label class="form-check-label" for="menikah">
+                                            Menikah
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pernikahan" id="belum"
+                                            checked>
+                                        <label class="form-check-label" for="belum">
+                                            Belum / Tidak Menikah
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pernikahan" id="duda">
+                                        <label class="form-check-label" for="duda">
+                                            Duda / Janda
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="pekerjaan" class="col-form-label">Pekerjaan :</label>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="asn">
+                                        <label class="form-check-label" for="asn">
+                                            ASN
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="tni-polri">
+                                        <label class="form-check-label" for="tni-polri">
+                                            TNI / Polri
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="wiraswasta">
+                                        <label class="form-check-label" for="wiraswasta">
+                                            Wiraswasta
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="pedagang">
+                                        <label class="form-check-label" for="pedagang">
+                                            Pedagang
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="nelayan">
+                                        <label class="form-check-label" for="nelayan">
+                                            Nelayan
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="petani">
+                                        <label class="form-check-label" for="petani">
+                                            Petani
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="rohaniawan">
+                                        <label class="form-check-label" for="rohaniawan">
+                                            Rohaniawan
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pekerjaan" id="honorer">
+                                        <label class="form-check-label" for="honorer">
+                                            Honorer
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="agama" class="col-form-label">Agama :</label>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="agama" id="katolik">
+                                        <label class="form-check-label" for="katolik">
+                                            Katolik
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="agama" id="kristen">
+                                        <label class="form-check-label" for="kristen">
+                                            Kristen
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="agama" id="islam">
+                                        <label class="form-check-label" for="islam">
+                                            Islam
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="agama" id="hindu">
+                                        <label class="form-check-label" for="hindu">
+                                            Hindu
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="agama" id="budha">
+                                        <label class="form-check-label" for="budha">
+                                            Budha
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="agama" id="konghucu">
+                                        <label class="form-check-label" for="konghucu">
+                                            Konghucu
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label for="pendidikan" class="col-form-label">Pendidikan Terakhir :</label>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pendidikan"
+                                            id="tidak-sekolah">
+                                        <label class="form-check-label" for="tidak-sekolah">
+                                            Tidak Sekolah
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pendidikan" id="sd">
+                                        <label class="form-check-label" for="sd">
+                                            SD
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pendidikan" id="smp">
+                                        <label class="form-check-label" for="smp">
+                                            SMP
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pendidikan" id="sma">
+                                        <label class="form-check-label" for="sma">
+                                            SMA
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pendidikan" id="s1">
+                                        <label class="form-check-label" for="s1">
+                                            S1
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="pendidikan" id="s2">
+                                        <label class="form-check-label" for="s2">
+                                            S2
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 mb-4">
+                                    <button type="submit" class="btn btn-danger px-3">Input Biodata</button>
+                                    <button type="reset" class="btn btn-secondary px-3">Reset</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Anggota End -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
