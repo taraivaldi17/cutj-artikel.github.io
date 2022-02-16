@@ -1,7 +1,6 @@
-<!-- Header -->
-<iframe src="header.html"
-    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
-<!-- End Header -->
+<!-- Navbar -->
+<?php include('navbar.php'); ?>
+<!-- End Navbar -->
 
 <!-- Home Start -->
 <section class="home py-5" id="home">
@@ -264,27 +263,22 @@
                     <form name="cutj-artikel-contact-form">
                         <div class="row">
                             <div class="col-lg-6 mb-4">
-                                <input type="text" id="nama" name="nama"
-                                    class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Nama">
+                                <input type="text" id="nama" name="nama" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Nama">
                             </div>
                             <div class="col-lg-6 mb-4">
-                                <input type="email" id="email" name="email"
-                                    class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Email">
+                                <input type="email" id="email" name="email" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Email">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-12 mb-4">
-                                <input type="text" id="subject" name="subject"
-                                    class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Subject">
+                                <input type="text" id="subject" name="subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Subject">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-12 mb-4">
-                                <textarea rows="5" id="pesan" name="pesan"
-                                    class="form-control form-control-lg fs-6 border-0 shadow-sm"
-                                    placeholder="Pesan"></textarea>
+                                <textarea rows="5" id="pesan" name="pesan" class="form-control form-control-lg fs-6 border-0 shadow-sm" placeholder="Pesan"></textarea>
                             </div>
                         </div>
 
@@ -297,8 +291,7 @@
 
                                 <!-- Tombol Loading -->
                                 <button type="button" class="btn btn-danger px-3 btn-loading d-none" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status"
-                                        aria-hidden="true"></span> Loading.
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading.
                                 </button>
                             </div>
                         </div>
@@ -319,45 +312,41 @@
 
 <!-- Javascript Untuk Contact US -->
 <script>
-    const scriptURL =
-        'https://script.google.com/macros/s/AKfycbxWuuNaTUsPRJ0govGGPTSB4qipkRHIhSkB3_WRce8Aph3nDcnrvcs3LGCfWMIKUF0g/exec';
-    const form = document.forms['cutj-artikel-contact-form'];
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxWuuNaTUsPRJ0govGGPTSB4qipkRHIhSkB3_WRce8Aph3nDcnrvcs3LGCfWMIKUF0g/exec';
+  const form = document.forms['cutj-artikel-contact-form'];
 
-    const btnKirim = document.querySelector('.btn-kirim');
-    const btnLoading = document.querySelector('.btn-loading');
-    const okAlert = document.querySelector('.ok-alert');
-    const opsAlert = document.querySelector('.ops-alert');
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const okAlert = document.querySelector('.ok-alert');
+  const opsAlert = document.querySelector('.ops-alert');
 
-    form.addEventListener('submit', e => {
-        e.preventDefault();
+  form.addEventListener('submit', e => {
+    e.preventDefault();
 
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
 
-        fetch(scriptURL, {
-                method: 'POST',
-                body: new FormData(form)
-            })
-            .then(response => {
-                // tampilkan tombol kirim, hilangkan tombol loading
-                btnLoading.classList.toggle('d-none');
-                btnKirim.classList.toggle('d-none');
-                // tampilkan alert
-                okAlert.classList.toggle('d-none');
-                // reset form
-                form.reset();
-                console.log('Success!', response);
-            })
-            .catch(error => {
-                // tampilkan tombol kirim, hilangkan tombol loading
-                btnLoading.classList.toggle('d-none');
-                btnKirim.classList.toggle('d-none');
-                // tampilkan alert
-                opsAlert.classList.toggle('d-none');
-                console.error('Error!', error.message);
-            })
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            okAlert.classList.toggle('d-none');
+            // reset form
+            form.reset();
+            console.log('Success!', response);
+        })
+        .catch(error => {
+            // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            opsAlert.classList.toggle('d-none');
+            console.error('Error!', error.message);
+        })
     });
 </script>
 
-<iframe src="footer.html"
-    onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+<?php include('footer.php'); ?>
+    
